@@ -1,15 +1,18 @@
-import time
-#snake : '_' 의 사용 -> 평소 내가 쓰던 방식.
-#cammel : 단어가 달라질 때 대문자를 사용하는거 -> 김승환 교수님이 쓰던 방식
-countdown_snake = [5,4,3,2,1,'Hey!']
-countdownCammel = [5,4,3,2,1,'Hey!']
+example ={'korean' : 'Kimchi', 'japan' : "sushi", 'china' : "duck"}
 
-for countdown in 5,4,3,2,1,'Hey!':
-    #time.sleep(1)
-    print(countdown)
 
-print(countdown_snake[3])
-print(countdown_snake[-1])
+country = 'japan'
+print(f'{country}의 맛있는 음식은 {example[country]}')
 
-print('program over')
+#old style
+print('%s의 맛있는 음식은 %s _ v'%(country, example[country]))
+print("{0}의 맛있는 음식은 {1} oldest v".format(country, example[country]))
 
+
+import webbrowser
+import json
+from urllib.request import urlopen
+
+# print("Let's find an old website.")
+# site = input("Type a website URL : ")
+# era = input("Type a")
